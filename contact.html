@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dr. QR Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="dr-qr-code-white.png" alt="Dr. QR Code Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have questions or feedback? We'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <section class="page-content">
+            <div class="container">
+                <p>Thank you for your interest in Dr. QR Code. If you have any questions, suggestions, or feedback about our tool, please don't hesitate to reach out. We're always looking for ways to improve and provide a better experience for our users.</p>
+        
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-envelope"></i> Email:  <a href="mailto:support@drqrcode.com">support@drqrcode.com</a></p>
+                    <p><i class="fas fa-phone"></i> Phone:  <a href="tel:+12025550187">+1 (202) 555-0187</a></p>
+                    <p><i class="fas fa-clock"></i> Response Time: We typically respond to all inquiries within 24-48 hours during business days.</p>
+                </div>
+                <br>
+                <h3>Feedback</h3>
+                <p>Your feedback is invaluable to us. If you've used our QR Code generator tool and have suggestions for improvement or have encountered any issues, please let us know. Your input helps us make our tool better for everyone.</p>
+                
+                <h3>Bug Reports</h3>
+                <p>If you've encountered a bug while using our tool, please provide as much detail as possible, including:</p>
+                <ul>
+                    <li>The browser you were using (including version)</li>
+                    <li>The device and operating system</li>
+                    <li>A description of what happened</li>
+                    <li>Steps to reproduce the issue, if possible</li>
+                </ul>
+                <br>
+                <h3>Feature Requests</h3>
+                <p>Have an idea for a new feature or enhancement? We'd love to hear it! While we can't implement every suggestion, we carefully consider all feedback when planning future updates, especially for our upcoming premium features.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="dr-qr-code-white.png" alt="Dr. QR Code Logo">
+                        </a>
+                    </div>
+                    <p>Simple, fast, and secure QR code generation.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-features">
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Instant Generation</li>
+                        <li>Secure Encoding</li>
+                        <li>Mobile Friendly</li>
+                        <li>Unlimited Usage</li>
+                    </ul>
+                </div>
+                <div class="footer-premium">
+                    <h3>Premium (Coming Soon)</h3>
+                    <ul>
+                        <li>Batch Processing</li>
+                        <li>Custom QR Codes</li>
+                        <li>Analytics</li>
+                        <li>Business Integration</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:support@drqrcode.com">support@drqrcode.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+12025550187">+1 (202) 555-0187</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dr. QR Code. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-links li');
+            
+            burger.addEventListener('click', () => {
+                // Toggle Nav
+                nav.classList.toggle('nav-active');
+                
+                // Animate Links
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = '';
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                    }
+                });
+                
+                // Burger Animation
+                burger.classList.toggle('toggle');
+            });
+        }
+        
+        navSlide();
+    </script>
+</body>
+</html>

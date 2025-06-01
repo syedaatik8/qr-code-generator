@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. QR Code - Not a real doctor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="dr-qr-code-white.png" alt="Dr. QR Code Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Unleash Your QR Code Potential</h2>
+                    <p>Keep your digital connections organized with powerful QR codes. Say goodbye to complex URLs and easily share your content with a single scan.</p>
+                    <a href="#qr-generator" class="cta-button">Get Started</a>
+                </div>
+                <div class="hero-image">
+                    <div class="qr-sample"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="qr-generator" id="qr-generator">
+            <div class="container">
+                <div class="generator-container">
+                    <div class="generator-form">
+                        <h2>Generate Your QR Code</h2>
+                        <p>Enter a URL below to create your free QR code instantly</p>
+                        
+                        <div class="input-group">
+                            <input type="text" id="url-input" placeholder="Enter URL here" class="url-input">
+                            <button id="generate-btn" class="generate-btn">Generate QR Code</button>
+                        </div>
+                        
+                        <div class="error-message" id="error-message"></div>
+                    </div>
+                    
+                    <div class="qr-result" id="qr-result">
+                        <div class="qr-code-container">
+                            <div id="qr-code"></div>
+                        </div>
+                        <div class="qr-actions">
+                            <button id="download-btn" class="download-btn" disabled>Download QR Code</button>
+                            <button id="new-qr-btn" class="new-qr-btn">Create New QR Code</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Instant Generation</h3>
+                        <p>Create QR codes in seconds with our lightning-fast generation engine.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-lock"></i>
+                        <h3>Secure Encoding</h3>
+                        <p>All your data is securely encoded using industry-standard protocols.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile Friendly</h3>
+                        <p>QR codes optimized for scanning with any modern smartphone camera.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-infinity"></i>
+                        <h3>Unlimited Usage</h3>
+                        <p>Create as many QR codes as you need with our free service.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="premium">
+            <div class="container">
+                <h2>Premium Features Coming Soon</h2>
+                <div class="premium-grid">
+                    <div class="premium-card">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Batch Processing</h3>
+                        <p>Generate multiple QR codes at once with our bulk creation tool.</p>
+                        <span class="coming-soon">Coming Soon</span>
+                    </div>
+                    <div class="premium-card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Custom QR Codes</h3>
+                        <p>Add your logo, colors, and custom designs to your QR codes.</p>
+                        <span class="coming-soon">Coming Soon</span>
+                    </div>
+                    <div class="premium-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Analytics</h3>
+                        <p>Track scans, user locations, and engagement with detailed reports.</p>
+                        <span class="coming-soon">Coming Soon</span>
+                    </div>
+                    <div class="premium-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Business Integration</h3>
+                        <p>Seamlessly integrate QR codes with your business systems and workflows.</p>
+                        <span class="coming-soon">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="dr-qr-code-white.png" alt="Dr. QR Code Logo">
+                        </a>
+                    </div>
+                    <p>Simple, fast, and secure QR code generation.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-features">
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Instant Generation</li>
+                        <li>Secure Encoding</li>
+                        <li>Mobile Friendly</li>
+                        <li>Unlimited Usage</li>
+                    </ul>
+                </div>
+                <div class="footer-premium">
+                    <h3>Premium (Coming Soon)</h3>
+                    <ul>
+                        <li>Batch Processing</li>
+                        <li>Custom QR Codes</li>
+                        <li>Analytics</li>
+                        <li>Business Integration</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:support@drqrcode.com">support@drqrcode.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+12025550187">+1 (202) 555-0187</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dr. QR Code. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        // Mobile navigation toggle
+        const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-links li');
+            
+            burger.addEventListener('click', () => {
+                // Toggle Nav
+                nav.classList.toggle('nav-active');
+                
+                // Animate Links
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = '';
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                    }
+                });
+                
+                // Burger Animation
+                burger.classList.toggle('toggle');
+            });
+        }
+        
+        navSlide();
+        
+        // QR Code Generator Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlInput = document.getElementById('url-input');
+            const generateBtn = document.getElementById('generate-btn');
+            const qrResult = document.getElementById('qr-result');
+            const qrCode = document.getElementById('qr-code');
+            const downloadBtn = document.getElementById('download-btn');
+            const newQrBtn = document.getElementById('new-qr-btn');
+            const errorMessage = document.getElementById('error-message');
+            
+            // Initially hide the QR result section
+            qrResult.style.display = 'none';
+            
+            // Generate QR code
+            generateBtn.addEventListener('click', function() {
+                const url = urlInput.value.trim();
+                
+                // Validate URL
+                if (!url) {
+                    errorMessage.textContent = 'Please enter a URL';
+                    return;
+                }
+                
+                // Simple URL validation
+                if (!isValidURL(url)) {
+                    errorMessage.textContent = 'Please enter a valid URL (e.g., https://example.com)';
+                    return;
+                }
+                
+                errorMessage.textContent = '';
+                
+                // Clear previous QR code
+                qrCode.innerHTML = '';
+                
+                // Generate new QR code
+                new QRCode(qrCode, {
+                    text: url,
+                    width: 200,
+                    height: 200,
+                    colorDark: '#000000',
+                    colorLight: '#ffffff',
+                    correctLevel: QRCode.CorrectLevel.H
+                });
+                
+                // Show QR result section
+                qrResult.style.display = 'block';
+                
+                // Enable download button
+                downloadBtn.disabled = false;
+            });
+            
+            // Download QR code
+            downloadBtn.addEventListener('click', function() {
+                const qrImage = qrCode.querySelector('img');
+                if (qrImage) {
+                    const link = document.createElement('a');
+                    link.download = 'dr-qr-code.png';
+                    link.href = qrImage.src;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }
+            });
+            
+            // Create new QR code
+            newQrBtn.addEventListener('click', function() {
+                urlInput.value = '';
+                qrResult.style.display = 'none';
+                downloadBtn.disabled = true;
+                errorMessage.textContent = '';
+            });
+            
+            // URL validation function
+            function isValidURL(string) {
+                try {
+                    new URL(string);
+                    return true;
+                } catch (_) {
+                    // If string doesn't have protocol, try adding https://
+                    if (!string.match(/^[a-zA-Z]+:\/\//)) {
+                        try {
+                            new URL('https://' + string);
+                            urlInput.value = 'https://' + string;
+                            return true;
+                        } catch (_) {
+                            return false;
+                        }
+                    }
+                    return false;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
